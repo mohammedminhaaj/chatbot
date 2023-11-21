@@ -1,0 +1,36 @@
+intent,response
+greeting,"Hello, How can I assist you today?"
+greeting,Hi there
+greeting,"Hey, How can I help you?"
+greeting,"Good day, How can I help you?"
+goodbye,Good bye!
+goodbye,See you later!
+goodbye,See you soon.
+goodbye,Bye!
+goodbye,Take care.
+no_intent,"I'm sorry, I didn't understand that."
+no_intent,I need more information.
+no_intent,Can you please try rephrasing your request?
+no_intent,"I'm still under development, and I'm always learning new things. Can you please try asking me something else?"
+no_intent,"I'm afraid I can't help you with that."
+thank_you,You're welcome!
+thank_you,No problem!
+thank_you,It was my pleasure!
+thank_you,I'm glad I could help!
+thank_you,I'm happy to do it!
+thank_you,Think nothing of it!
+thank_you,Don't mention it!
+thank_you,Any time!
+thank_you,Anytime!
+thank_you,Of course!
+thank_you,Sure thing!
+thank_you,No worries!
+thank_you,No need to thank me!
+thank_you,I'm glad you're happy with the results!
+thank_you,I'm here to help!
+thank_you,Let me know if you have any other questions!
+appreciation,Thank you for your kind words. I'm glad you're happy with the results.
+appreciation,I appreciate your feedback. I always strive to do my best.
+appreciation,It's my pleasure to help. Let me know if you have any other questions.
+appreciation,I'm glad I could be of assistance. Please don't hesitate to reach out if you need anything else.
+appreciation,Thank you for acknowledging my efforts. I'm always working to improve my skills and knowledge.

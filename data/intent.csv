@@ -1,0 +1,139 @@
+intent,value
+no_intent,na
+greeting,Hi
+greeting,Hello
+greeting,Hola
+greeting,Hey
+greeting,Good day
+greeting,Good morning
+greeting,Good afternoon
+greeting,Good evening
+greeting,Greetings
+goodbye,Exit
+goodbye,Bye
+goodbye,Goodbye
+goodbye,Good bye
+goodbye,See you later
+goodbye,Farewell
+goodbye,Peace out
+goodbye,See ya
+goodbye,Good night
+goodbye,Bye for now
+goodbye,Take care
+thank_you,Thanks
+thank_you,Thank you
+thank_you,I appreciate your work
+thank_you,Thanks for the help
+appreciation,You did a great job
+appreciation,You are the best
+appreciation,Good work
+appreciation,Nice to meet you
+announce_name,Say my name
+announce_name,What's my name
+announce_name,What is my name
+announce_name,Tell me my name
+announce_name,Repeat my name
+announce_name,Do you remember me
+announce_name,Do you remember my name
+announce_name,Who am I
+announce_name,Do you know my name
+announce_name,Tell me who I am
+announce_name,I guess you forgot me
+announce_name,Call my name
+announce_name,Say my name aloud
+announce_name,Did you forget me
+change_name,That is not my name
+change_name,My name is incorrect
+change_name,You are mispronouncing my name
+change_name,My name is not correct
+change_name,That is an incorrect name
+change_name,Change my name
+change_name,My name is misspelled
+change_name,I have a spelling mistake in my name
+change_name,Spelling is not correct
+change_name,I spelled my name wrong
+general,How are you
+general,What's the weather
+general,Tell me a joke
+general,What's up
+general,What is your name
+general,Tell me something about you
+general,How is everything going
+general,What can you do
+game_search,Find a game
+game_search,Search a game
+game_search,Show me some games
+game_search,Look for a game
+game_search,I want to find a game
+game_search,Recommend a game
+game_search,I want to play a new game
+game_search,I am looking for a new game to play
+game_search,Suggest me some games
+game_search,Suggest me few games
+game_search,Suggest me a game
+game_search,Recommend a game for me
+platform_recommendation,I am looking for some pc games
+platform_recommendation,Suggest me some pc games
+platform_recommendation,Pc games
+platform_recommendation,What pc games do you have
+platform_recommendation,What xbox games do you have
+platform_recommendation,What play station games do you have
+platform_recommendation,Games for my pc
+platform_recommendation,Thinking of buying a game for my pc
+platform_recommendation,Thinking of buying a game for my xbox
+platform_recommendation,Thinking of buying a game for my play station
+platform_recommendation,Pc
+platform_recommendation,I am looking for some xbox games
+platform_recommendation,xbox
+platform_recommendation,Suggest me some xbox games
+platform_recommendation,games for xbox
+platform_recommendation,xbox 360
+platform_recommendation,Ps
+platform_recommendation,Ps5 games
+platform_recommendation,playstation
+platform_recommendation,suggest me some playstation games
+genre_exploration,I'm interested in action games
+genre_exploration,Do you have any adventure games
+genre_exploration,Do you have any action games
+genre_exploration,Do you have any puzzle games
+genre_exploration,suggest me some action games
+genre_exploration,give me some action games
+genre_exploration,show me some action games
+genre_exploration,action games
+genre_exploration,action
+genre_exploration,adventure games
+genre_exploration,puzzle games
+genre_exploration,suggest me some puzzle games
+genre_exploration,show me a few puzzle games
+genre_exploration,suggest me some adventure games
+genre_exploration,list some adventure games
+genre_exploration,list some action games
+genre_exploration,list some puzzle games
+genre_exploration,popular action games
+genre_exploration,popular adventure games
+genre_exploration,popular puzzle games
+genre_exploration,latest adventure games
+genre_exploration,latest action games
+genre_exploration,latest puzzle games
+genre_exploration,old action games
+genre_exploration,old puzzle games
+genre_exploration,old adventure games
+game_fact,what's your opinion on
+game_fact,can you review this game
+game_fact,I'm interested in reading a review
+game_fact,provide me a description
+game_fact,give me some details about this game
+game_fact,what is this game about
+game_fact,what type of game is this
+game_fact,give me some insights on this game
+game_fact,How good is this game
+game_fact,Give me some facts about this game
+game_fact,tell me more about this game
+game_comparision,What is the difference
+game_comparision,compare the game
+game_comparision,Which one should I buy
+game_comparision,Which one should I purchase
+game_comparision,I'm confused
+game_comparision,comparision
+game_comparision,Which game is better
+game_comparision,Trying to decide which game

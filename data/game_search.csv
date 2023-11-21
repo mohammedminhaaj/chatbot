@@ -1,0 +1,57 @@
+keyword,value,response,type
+na,not_found,"I'm sorry, I didn't understand. Could you please try again? ",not_found
+playstation,playstation,for PlayStation platform,platform
+ps,playstation,for PlayStation platform,platform
+play station,playstation,for PlayStation platform,platform
+playstation1,playstation 1,for PlayStation 1 platform,platform
+playstation 1,playstation 1,for PlayStation 1 platform,platform
+play station 1,playstation 1,for PlayStation 1 platform,platform
+ps1,playstation 1,for PlayStation 1 platform,platform
+playstation2,playstation 2,for PlayStation 2 platform,platform
+playstation 2,playstation 2,for PlayStation 2 platform,platform
+play station 2,playstation 2,for PlayStation 2 platform,platform
+ps2,playstation 2,for PlayStation 2 platform,platform
+playstation3,playstation 3,for PlayStation 3 platform,platform
+playstation 3,playstation 3,for PlayStation 3 platform,platform
+play station 3,playstation 3,for PlayStation 3 platform,platform
+ps3,playstation 3,for PlayStation 3 platform,platform
+playstation4,playstation 4,for PlayStation 4 platform,platform
+playstation 4,playstation 4,for PlayStation 4 platform,platform
+play station 4,playstation 4,for PlayStation 4 platform,platform
+ps4,playstation 4,for PlayStation 4 platform,platform
+playstation5,playstation 5,for PlayStation 5 platform,platform
+playstation 5,playstation 5,for PlayStation 5 platform,platform
+play station 5,playstation 5,for PlayStation 5 platform,platform
+ps5,playstation 5,for PlayStation 5 platform,platform
+xbox,xbox,for Xbox platform,platform
+pc,pc,for PC,platform
+I don't know,na,"No problem, I'll display all results if you're not sure","platform,genre"
+I am not sure,na,"No problem, I'll display all results if you're not sure","platform,genre"
+na,na,"No problem, I'll display all results if you're not sure","platform,genre"
+for all platforms,na,"No problem, I'll display all results if you're not sure","platform,genre"
+for all genres,na,"No problem, I'll display all results if you're not sure","platform,genre"
+show me all genres,na,"No problem, I'll display all results if you're not sure","platform,genre"
+I want to see all platforms,na,"No problem, I'll display all results if you're not sure","platform,genre"
+I want to see all genres,na,"No problem, I'll display all results if you're not sure","platform,genre"
+show me all platforms,na,"No problem, I'll display all results if you're not sure","platform,genre"
+Not sure about the platform,na,"No problem, I'll display all results if you're not sure","platform,genre"
+Not sure about the genre,na,"No problem, I'll display all results if you're not sure","platform,genre"
+adventure,adventure,Showing all adventure games,genre
+action,action,Showing all action games,genre
+puzzle,puzzle,Showing all puzzle games,genre
+adventure and action,"adventure,action",Showing all adventure and action games,genre
+adventure and puzzle,"adventure,puzzle",Showing all adventure and puzzle games,genre
+action and puzzle,"action,puzzle",Showing all action and puzzle games,genre
+adventure or action,"adventure,action",Showing all adventure or action games,genre
+adventure or puzzle,"adventure,puzzle",Showing all adventure or puzzle games,genre
+action or puzzle,"action,puzzle",Showing all action or puzzle games,genre
+action adventure and puzzle,na,"Showing all action, adventure, and puzzle",genre
+action adventure or puzzle,na,"Showing all action, adventure, and puzzle",genre
+playstation and pc,"playstation,pc",for playstation and pc,platform
+playstation and xbox,"playstation,xbox",for playstation and xbox,platform
+xbox and pc,"xbox,pc",for xbox and pc,platform
+playstation xbox and pc,na,"for playstation, xbox, and pc",platform
+playstation xbox or pc,na,"for playstation, xbox, or pc",platform
+playstation or pc,"playstation,pc",for playstation or pc,platform
+playstation or xbox,"playstation,xbox",for playstation or xbox,platform
+xbox or pc,"xbox,pc",for xbox or pc,platform

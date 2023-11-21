@@ -1,0 +1,24 @@
+question,answer
+no_answer,Sorry for not understanding the question. Could you please rephrase it?
+Say my name,It's @username
+What's my name,It's @username
+What is my name,It's @username
+Tell me my name,Your name is @username
+Repeat my name,Your name is @username
+Do you remember me,"Ofcourse I remember you, @username"
+Do you remember my name,"Ofcourse I remember your name, @username."
+Who am I,You are @username
+Do you know my name,"Yes, I do. It's @username"
+Tell me who I am,You are @username
+I guess you forgot me,"No, I didn't forget you @username."
+I think you forgot me,"No, I didn't forget you @username."
+Call my name, @username !
+Say my name aloud, @username !!!!!
+How are you,"I'm doing well, thanks for asking. How can I help you today?"
+What's up,Nothing much around here. Do you need any help?
+What's the weather,"I'm sorry, but I am not able to answer questions which are out of my scope. My purpose is to help you with queries related to video games. Is there anything else I can help you with today?"
+Tell me a joke,Why did the gamer cross the road? To get to the other console.
+What is your name,My name keeps on changing as I am still under development. I'll let you know once my developers decide my name :P.
+Tell me something about you,"I am a chatbot designed to help resolve user's queries related to video games. Like, details about a game, details about games related to specific consoles, genre information, game comparision, and much more."
+How is everything going,Everything is going good. I hear the CPU fan buzzing from very close which gets a little annoying sometimes.
+What can you do,"I can help you find information about video games, including genre, release date, platform availability, and gameplay details."
