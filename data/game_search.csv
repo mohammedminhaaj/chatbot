@@ -55,3 +55,12 @@ playstation xbox or pc,na,"for playstation, xbox, or pc",platform
 playstation or pc,"playstation,pc",for playstation or pc,platform
 playstation or xbox,"playstation,xbox",for playstation or xbox,platform
 xbox or pc,"xbox,pc",for xbox or pc,platform
+looking for pc games,pc,for pc,platform
+looking for xbox games,xbox,for xbox,platform
+looking for playstation,playstation,for playstation,platform
+looking for pc and xbox,"pc,xbox",for pc and xbox,platform
+looking for pc or xbox,"pc,xbox",for pc or xbox,platform
+looking for xbox and playstation,"xbox,playstation",for xbox and playstation,platform
+looking for pc and playstation,"pc,playstation",for pc and playstation,platform
+looking for pc or playstation,"pc,playstation",for pc or playstation,platform
+looking for pc or xbox,"pc,xbox",for pc or xbox,platform

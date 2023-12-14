@@ -28,6 +28,7 @@ appreciation,You did a great job
 appreciation,You are the best
 appreciation,Good work
 appreciation,Nice to meet you
+appreciation,Cool
 announce_name,Say my name
 announce_name,What's my name
 announce_name,What is my name
@@ -60,6 +61,9 @@ general,What is your name
 general,Tell me something about you
 general,How is everything going
 general,What can you do
+general,Where can I buy this game
+general,How do I download this game
+general,What can you help me with
 game_search,Find a game
 game_search,Search a game
 game_search,Show me some games
@@ -72,6 +76,15 @@ game_search,Suggest me some games
 game_search,Suggest me few games
 game_search,Suggest me a game
 game_search,Recommend a game for me
+game_search,Display some games
+game_search,Show me more games
+game_search,Display some of your games
+game_search,Show me some of your games
+game_search,Recommend me some games
+game_search,Show me a list of games
+game_search,Help me find some good games
+game_search,Give me more games
+game_search,Give me a few list of games
 platform_recommendation,I am looking for some pc games
 platform_recommendation,Suggest me some pc games
 platform_recommendation,Pc games
@@ -119,6 +132,11 @@ genre_exploration,old action games
 genre_exploration,old puzzle games
 genre_exploration,old adventure games
 game_fact,what's your opinion on
+game_fact,I want to know more about
+game_fact,Give me some information on
+game_fact,Tell me about the game
+game_fact,I am talking about the game
+game_fact,Tell me more about
 game_fact,can you review this game
 game_fact,I'm interested in reading a review
 game_fact,provide me a description
@@ -128,12 +146,45 @@ game_fact,what type of game is this
 game_fact,give me some insights on this game
 game_fact,How good is this game
 game_fact,Give me some facts about this game
+game_fact,Give me a description of this game
 game_fact,tell me more about this game
-game_comparision,What is the difference
-game_comparision,compare the game
-game_comparision,Which one should I buy
-game_comparision,Which one should I purchase
-game_comparision,I'm confused
-game_comparision,comparision
-game_comparision,Which game is better
-game_comparision,Trying to decide which game
+game_platform_fact,Can I run this game
+game_platform_fact,What platform can we play this game on
+game_platform_fact,What platforms does it support
+game_platform_fact,What are the supported platforms
+game_platform_fact,What are some supported platforms
+game_platform_fact,Which platforms does this game run on
+game_platform_fact,Where can I run this game
+game_platform_fact,What are the platforms in which this game runs
+game_platform_fact,Show me the platform
+game_platform_fact,Show me the platform in which this game runs
+game_platform_fact,Which gaming consoles support this game
+game_platform_fact,Can you list the platforms where this game is available
+game_platform_fact,On what platforms can I play this game
+game_platform_fact,Show me the gaming devices compatible with this game
+game_platform_fact,Tell me where I can play this game
+game_platform_fact,What gaming systems are supported for this game
+game_platform_fact,Give me information about the available platforms for this game
+game_platform_fact,List the devices on which I can run this game
+game_platform_fact,Which gaming consoles is this game compatible with
+game_platform_fact,Inform me about the supported platforms for this game
+game_platform_fact,What platform does the game support
+game_platform_fact,Is this a playstation game
+game_platform_fact,Is this a PC game
+game_platform_fact,Is this a xbox game
+game_genre_fact,What is the genre of this game
+game_genre_fact,ell me about the game's genre
+game_genre_fact,Can you provide information about the genre of this game
+game_genre_fact,In which genre does this game fall
+game_genre_fact,Show me the genre of this game
+game_genre_fact,What type of game is this in terms of genre
+game_genre_fact,Inform me about the gaming genre of this title
+game_genre_fact,What genre does this game belong to
+game_genre_fact,Describe the genre of this game
+game_genre_fact,Give me details about the gaming genre of this title
+game_genre_fact,Is this an adventure game
+game_genre_fact,Is this an action game
+game_genre_fact,Is this a puzzle game
+game_availibility,Do you have this game
+game_availibility,I was looking for this game
+game_availibility,When was this game released

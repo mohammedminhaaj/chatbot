@@ -1,14 +1,5 @@
-from utils.preference import get_preference
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import pandas as pd
-from typing import Any
-from utils import constants
+from utils.helpers import string_replacement_dict
 from utils.helpers import get_similar_result
-
-string_replacement_dict: dict[str, Any] = {
-    "@username": lambda : get_preference("username")
-}
 
 def process_user_query(tokens: list[str]) -> str:
     """

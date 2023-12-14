@@ -1,6 +1,6 @@
 from utils import constants
 from process import chatbot_response
-from utils.helpers import handle_capture_username
+from identity_management import handle_capture_username
 from utils.preference import clear_preferences
 
 """

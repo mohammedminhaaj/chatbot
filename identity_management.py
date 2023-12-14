@@ -1,5 +1,6 @@
 from nltk import word_tokenize, pos_tag, ne_chunk
 from utils.preference import update_preferences
+from utils import constants
 
 def capture_user_name(user_name_input: str) -> str | None:
     """
@@ -45,3 +46,27 @@ def capture_user_name(user_name_input: str) -> str | None:
     # Return None if the extracted_names list is empty
     else:
         return None 
+
+def handle_capture_username() -> None:
+    """
+    Helper function which initiates a loop to capture username
+    
+    Parameters
+    ----------
+        None
+
+    Returns
+    -------
+        None
+    """
+
+    # Initializing the captured_username to None
+    captured_username = None
+
+    # Initiate a loop and continue till the username is not captured
+    while not captured_username:
+        user_name_input = input(f"{constants.USER}: ")
+        captured_username = capture_user_name(user_name_input)
+        if not captured_username:
+            print(f"{constants.CHATBOT_NAME}: Sorry, I couldn't understand. Could you please provide me with your name?")
+    print(f"{constants.CHATBOT_NAME}: Great! Thanks {captured_username}. How may I assist you today?")

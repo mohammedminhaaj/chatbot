@@ -1,6 +1,6 @@
 import pandas as pd
 import random
-from utils.helpers import get_similar_result
+from utils.helpers import get_similar_result, string_replacement_dict
 
 def get_intent(tokens: list[str]) -> str:
     """
@@ -48,8 +48,13 @@ def get_intent_response(intent: str) -> str:
 
     # Check if the given intent has any responses
     if not intent_response_df.empty:
-        # Return a random response from the list of responses
-        return random.choice(intent_response_df['response'].tolist())
+        # Get a random response from the list of responses
+        response = random.choice(intent_response_df['response'].tolist())
+            # Check if the matched answer can be further processed
+        for key in string_replacement_dict.keys():
+            if key in response:
+                response = response.replace(key, string_replacement_dict[key]())
+        return response
     else:
         return "Apologies, I won't be able to answer this as it is out of my scope"
     

@@ -2,9 +2,10 @@ from preprocessing import preprocess_text
 from intent_matching import get_intent, get_intent_response
 from question_answer import process_user_query
 from typing import Any
-from utils.helpers import handle_capture_username
+from identity_management import handle_capture_username
 from utils.preference import clear_preferences_except_username
-from utils.game_search import handle_game_search
+from game_search import handle_game_search, extract_genre_platform, get_game_search_message
+from game_fact import handle_game_fact
 
 class ChatbotResponse:
     """
@@ -34,28 +35,45 @@ def chatbot_response(user_input: str) -> ChatbotResponse:
         ChatbotResponse: class
             ChatbotResponse class which contains processed text
     """
-    
-    # Pre-process the text to get the user input in the form of tokens
-    tokens = preprocess_text(user_input)
+    try:
+        # Pre-process the text to get the user input in the form of tokens
+        tokens = preprocess_text(user_input)
 
-    # Get the intent using the tokens
-    intent = get_intent(tokens)
+        # Get the intent using the tokens
+        intent = get_intent(tokens)
 
-    # Check if the intent is change_name
-    if intent == "change_name":
-        return ChatbotResponse(
-            message="Can you please provide your name again?", 
-            intent=intent, 
-            function_to_execute = lambda : handle_capture_username()
-        )
-    # Check if the intent is announce_name or general
-    elif intent in ["announce_name", "general"]:
-        return ChatbotResponse(message=process_user_query(tokens), intent=intent)
-    elif intent == "game_search":
-        clear_preferences_except_username()
-        return ChatbotResponse(
-            message="Certainly! Could you please tell me what genre are you looking for? Genre can be either Action, Adventure, Puzzle or combination of any.", 
-            intent=intent, 
-            function_to_execute = lambda : handle_game_search())
-    else:
-        return ChatbotResponse(message=get_intent_response(intent), intent=intent)
+        # Check if the intent is change_name
+        if intent == "change_name":
+            return ChatbotResponse(
+                message="Can you please provide your name again?", 
+                intent=intent, 
+                function_to_execute = lambda : handle_capture_username()
+            )
+        # Check if the intent is announce_name or general
+        elif intent in ["announce_name", "general"]:
+            # Return response from the question_answers csv
+            return ChatbotResponse(message=process_user_query(tokens), intent=intent)
+        
+        # Check if intent is game_search, platform_recommendation or genre_exploration
+        elif intent in ["game_search", "platform_recommendation", "genre_exploration"]:
+            # Clear the preferences except username
+            clear_preferences_except_username()
+
+            # Check if the user input has multiple intents
+            # Extract the genre and platform if available
+            captured_genre, captured_platform = extract_genre_platform(tokens=tokens)
+
+            return ChatbotResponse(
+                message=get_game_search_message(captured_genre, captured_platform), 
+                intent=intent,
+                function_to_execute = lambda : handle_game_search(captured_genre, captured_platform))
+        elif intent in ["game_fact", "game_genre_fact", "game_platform_fact"]:
+           return ChatbotResponse(
+                message="Please wait...", 
+                intent=intent, 
+                function_to_execute = lambda : handle_game_fact(tokens=tokens, intent=intent)
+            ) 
+        else:
+            return ChatbotResponse(message=get_intent_response(intent), intent=intent)
+    except Exception:
+        return ChatbotResponse(message="Something went wrong! Could you please restart the program?")

@@ -1,10 +1,16 @@
-from identity_management import capture_user_name
 from utils import constants
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
+from utils.preference import get_preference
+from typing import Any
 
-def get_similar_result(tokens: list[str], file_name: str, query_header_name: str, result_header_name: str | list[str], threshold: float | None = None) -> str | tuple[str]:
+string_replacement_dict: dict[str, Any] = {
+    "@username": lambda : get_preference("username"),
+    "@game_in_context": lambda: get_preference("game_in_context")
+}
+
+def get_similar_result(tokens: list[str], file_name: str, query_header_name: str, result_header_name: str | list[str], threshold: float | None = constants.DEFAULT_SIMILARITY_THRESHOLD) -> str | tuple[str]:
     """
     Function to get similar result by using TF-IDF vectorizer and cosine similarity
     
@@ -14,10 +20,12 @@ def get_similar_result(tokens: list[str], file_name: str, query_header_name: str
             Tokens generated from pre-processing the user input
         file_name: str
             Name of the file which will be searched for similarity
-        query_header_name: str | list[str]
-            Name of column or list of columns in the file which will be used to match the user input
-        result_header_name: str
-            Name of column in the file where the results will be stored
+        query_header_name: str
+            Name of column in the file which will be used to match the user input
+        result_header_name: str | list[str]
+            Name of column or list of columns in the file where the results will be stored
+        threshold: float | None
+            similarity threshold to be used. When nothing is specified, the threshold defaults to 0.7
 
 
     Returns
@@ -45,12 +53,9 @@ def get_similar_result(tokens: list[str], file_name: str, query_header_name: str
 
     # Find the index of the most similar result
     most_similar_index = similarities.argmax()
-    
-    # Get threshold from parameter or use the default threshold
-    similarity_threshold = threshold if threshold else constants.DEFAULT_SIMILARITY_THRESHOLD
 
     # Get the similar index after calculating threshold
-    similar_index_after_threshold = most_similar_index if similarities[0, most_similar_index] >= similarity_threshold else 0
+    similar_index_after_threshold = most_similar_index if similarities[0, most_similar_index] >= threshold else 0
 
     # Get the corresponding intent by checking the threshold
     # If the result header name is a string
@@ -74,28 +79,4 @@ def get_similar_result(tokens: list[str], file_name: str, query_header_name: str
 
     # Return the matched result
     return matched_result
-
-def handle_capture_username() -> None:
-    """
-    Helper function which initiates a loop to capture username
-    
-    Parameters
-    ----------
-        None
-
-    Returns
-    -------
-        None
-    """
-
-    # Initializing the captured_username to None
-    captured_username = None
-
-    # Initiate a loop and continue till the username is not captured
-    while not captured_username:
-        user_name_input = input(f"{constants.USER}: ")
-        captured_username = capture_user_name(user_name_input)
-        if not captured_username:
-            print(f"{constants.CHATBOT_NAME}: Sorry, I couldn't understand. Could you please provide me with your name?")
-    print(f"{constants.CHATBOT_NAME}: Great! Thanks {captured_username}. How may I assist you today?")
 
